@@ -1,12 +1,10 @@
 # Learning Claude Code
 
-Welcome to the **Learning Claude Code** repository!
-
-This repository documents the journey of exploring and learning [Claude Code](https://claude.ai/claude-code) — Anthropic's AI-powered coding assistant for the terminal.
+A structured, hands-on journey through [Claude Code](https://claude.ai/claude-code) — Anthropic's AI-powered coding assistant for the terminal.
 
 ## What is Claude Code?
 
-Claude Code is a command-line tool that brings the power of Claude directly into your development workflow. It can:
+Claude Code is a command-line tool that brings Claude directly into your development workflow. It can:
 
 - Read and edit files in your codebase
 - Run terminal commands
@@ -14,7 +12,21 @@ Claude Code is a command-line tool that brings the power of Claude directly into
 - Help debug, refactor, and write code
 - Create and manage git commits and pull requests
 
-## Getting Started
+## Tech Stack
+
+Examples in this repo use:
+
+- **Python 3.12+** with **uv** for dependency management
+- **python-dotenv** / **pydantic-settings** to load `.env` from the repo root
+- **ruff** for linting and formatting, **pytest** for tests
+
+```bash
+uv sync                        # install dependencies
+uv run python <script.py>      # run a script
+uv run pytest                  # run tests
+```
+
+## Getting Started with Claude Code
 
 ### Installation
 
@@ -40,12 +52,16 @@ claude
 
 ## Topics Covered
 
-- [ ] Basic navigation and file editing
-- [ ] Running shell commands via Claude
-- [ ] Git workflow automation
-- [ ] Working with large codebases
-- [ ] Custom slash commands and hooks
-- [ ] MCP (Model Context Protocol) servers
+| # | Topic | Description |
+|---|-------|-------------|
+| 1 | **Basics** | Navigation, file editing, and shell commands |
+| 2 | **CLAUDE.md** | Project instructions and conventions for Claude |
+| 3 | **Skills** | Custom slash commands and reusable prompts |
+| 4 | **MCPs** | Model Context Protocol server integrations |
+| 5 | **Sub-agents** | Spawning and coordinating specialized agents |
+| 6 | **Modes** | Plan mode, auto-accept, and permission modes |
+| 7 | **Version Management** | Git workflow automation |
+| 8 | **Commands** | Advanced CLI usage and hooks |
 
 ## Resources
 
