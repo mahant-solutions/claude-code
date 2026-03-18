@@ -2,6 +2,8 @@
 
 A terminal-based interactive chat application for developers who run [Ollama](https://ollama.com) locally. Stream multi-turn conversations with any locally-installed LLM — no browser, no cloud, just a fast prompt in your terminal.
 
+![Ollama Chat CLI running in the terminal](assets/client_running.png)
+
 ## Features
 
 - **Streaming responses** — tokens appear on screen as they arrive, rendered as Markdown
